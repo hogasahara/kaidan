@@ -1,0 +1,97 @@
+:root {
+  --bg: #f7f5f0;
+  --fg: #2b2a28;
+  --muted: #8a857c;
+  --line: #e2ddd3;
+  --accent: #8c1c13;
+  --card: #fffdf8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131313;
+    --fg: #d6d2c9;
+    --muted: #7d7970;
+    --line: #2a2a2a;
+    --accent: #c25b4e;
+    --card: #1a1a1a;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  line-height: 2;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.wrap { max-width: 40rem; margin: 0 auto; padding: 1.4rem 1.2rem 4rem; }
+a { color: inherit; }
+header.site { margin: 1.5rem 0 2.2rem; }
+header.site h1 {
+  font-size: 1.5rem; letter-spacing: .3em; margin: 0;
+  font-weight: 600;
+}
+header.site h1 a { text-decoration: none; }
+header.site p { margin: .2rem 0 0; color: var(--muted); font-size: .8rem; letter-spacing: .15em; }
+
+/* --- 目録 --- */
+ul.catalog { list-style: none; margin: 0; padding: 0; }
+ul.catalog li {
+  border-bottom: 1px solid var(--line);
+  padding: 0;
+}
+ul.catalog a {
+  display: block; text-decoration: none; padding: .9rem .2rem;
+}
+ul.catalog a:active { background: var(--card); }
+.story-title { font-size: 1.05rem; }
+.meta {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: var(--muted); font-size: .72rem; letter-spacing: .05em;
+  line-height: 1.6; margin-top: .15rem;
+}
+.meta .tag { margin-right: .6em; }
+h2.section {
+  font-size: .85rem; color: var(--muted); letter-spacing: .3em;
+  font-weight: 600; margin: 2.5rem 0 .5rem; border-bottom: 1px solid var(--line);
+  padding-bottom: .4rem;
+}
+ul.wanted { list-style: none; margin: 0; padding: 0; color: var(--muted); font-size: .85rem; }
+ul.wanted li { padding: .4rem .2rem; }
+
+/* --- 作品ページ --- */
+article h1 {
+  font-size: 1.45rem; font-weight: 600; letter-spacing: .1em;
+  margin: 0 0 .3rem;
+}
+article .meta { margin-bottom: 2.2rem; }
+article .meta a { color: var(--muted); }
+.body p { margin: 1.4em 0; }
+.body .res {
+  display: block;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: var(--muted); font-size: .72rem; line-height: 1.5;
+  margin: 2.4em 0 1.2em;
+}
+.note {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background: var(--card); border: 1px solid var(--line);
+  padding: .6rem .9rem; border-radius: .4rem;
+  font-size: .8rem; color: var(--muted); margin: 0 0 2rem;
+}
+nav.pager {
+  display: flex; justify-content: space-between; gap: 1rem;
+  margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: .85rem;
+}
+nav.pager a { text-decoration: none; color: var(--accent); max-width: 45%; }
+nav.pager .home { color: var(--muted); }
+footer.site {
+  margin-top: 4rem; border-top: 1px solid var(--line); padding-top: 1rem;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: var(--muted); font-size: .72rem; line-height: 1.7;
+}

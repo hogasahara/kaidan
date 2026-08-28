@@ -15,6 +15,7 @@ catalog.yaml   蒐集カタログ。集めたい話と取得元をここに登�
 stories/       正規化した本文(YAML frontmatter 付き Markdown)
 raw/           取得時の生データ(APIレスポンスJSON / 生HTML)。再現性と検証用
 INDEX.md       蔵書目録(自動生成)
+docs/          GitHub Pages 用の閲覧サイト(自動生成)
 tools/         蒐集ツール
 ```
 
@@ -34,7 +35,25 @@ python3 tools/collect.py --only hasshaku-sama --force
 
 # 索引だけ作り直す
 python3 tools/build_index.py
+
+# 閲覧サイト(docs/)だけ作り直す
+python3 tools/build_site.py
 ```
+
+## スマホで読む(GitHub Pages)
+
+`tools/build_site.py` が `docs/` に静的な閲覧サイトを生成する
+(明朝体・ダークモード対応・前後の話へのナビ付き。JS不使用)。
+
+公開手順(初回のみ):
+
+1. GitHub のリポジトリページ → **Settings → Pages**
+2. Source: **Deploy from a branch**
+3. Branch: 公開したいブランチ、Folder: **/docs** を選んで Save
+
+数分後に `https://<ユーザー名>.github.io/kaidan/` で読めるようになる。
+以後は `collect.py` を実行すると `docs/` も自動再生成されるので、
+コミットして push するだけで反映される。
 
 ## 話を追加する
 

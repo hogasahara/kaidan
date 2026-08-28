@@ -297,10 +297,11 @@ def main():
 
     print(f"\n取得 {ok} / スキップ {skipped} / 失敗 {failed}")
     if ok:
-        # 索引を作り直す
+        # 索引とサイトを作り直す
         sys.path.insert(0, str(ROOT / "tools"))
-        import build_index
+        import build_index, build_site
         build_index.main()
+        build_site.main()
     return 1 if failed else 0
 
 
