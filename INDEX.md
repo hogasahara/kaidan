@@ -2,7 +2,7 @@
 
 `tools/build_index.py` が生成する。手で編集しない。
 
-収集済み **32** 話
+収集済み **34** 話
 
 | タイトル | 投稿日 | タグ | 文字数 | 取得元 |
 |---|---|---|---|---|
@@ -37,6 +37,8 @@
 | [家族の奇行の真相](stories/kazoku-no-kikou.md) | 2005-12-07 | 名作 家 | 3267 | [dangi.link](https://dangi.link/%e5%ae%b6%e6%97%8f%e3%81%ae%e5%a5%87%e8%a1%8c%e3%81%ae%e7%9c%9f%e7%9b%b8/) |
 | [海からやってくるモノ](stories/umikara-yattekuru-mono.md) | 2005-12-07 | 名作 海 怪異 | 2621 | [dangi.link](https://dangi.link/%e6%b5%b7%e3%81%8b%e3%82%89%e3%82%84%e3%81%a3%e3%81%a6%e3%81%8f%e3%82%8b%e3%83%a2%e3%83%8e/) |
 | [色街](stories/iromachi.md) | 2007-05-07 | 名作 因習 街 | 6892 | [dangi.link](https://dangi.link/%e8%89%b2%e8%a1%97/) |
+| [ヒッチハイク](stories/hitchhike.md) | 2009-12-24 | 名作 長編 因習 | 14081 | [dangi.link](https://dangi.link/hh-3/) |
+| [NNN臨時放送](stories/nnn-rinji-housou.md) | 2001-06-02 | 都市伝説 放送 短編 | 410 | [dangi.link](https://dangi.link/rin/) |
 | [リゾートバイト](stories/resort-bait.md) |  | 名作 長編 海 | 41279 | [anime-toshidensetsu.com](https://anime-toshidensetsu.com/resortbeit-2ch/) |
 
 ## 未収集(取得元を探している話)
