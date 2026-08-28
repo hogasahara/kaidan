@@ -2,7 +2,7 @@
 
 `tools/build_index.py` が生成する。手で編集しない。
 
-収集済み **32** 話
+収集済み **43** 話
 
 | タイトル | 投稿日 | タグ | 文字数 | 取得元 |
 |---|---|---|---|---|
@@ -37,6 +37,17 @@
 | [家族の奇行の真相](stories/kazoku-no-kikou.md) | 2005-12-07 | 名作 家 | 3267 | [dangi.link](https://dangi.link/%e5%ae%b6%e6%97%8f%e3%81%ae%e5%a5%87%e8%a1%8c%e3%81%ae%e7%9c%9f%e7%9b%b8/) |
 | [海からやってくるモノ](stories/umikara-yattekuru-mono.md) | 2005-12-07 | 名作 海 怪異 | 2621 | [dangi.link](https://dangi.link/%e6%b5%b7%e3%81%8b%e3%82%89%e3%82%84%e3%81%a3%e3%81%a6%e3%81%8f%e3%82%8b%e3%83%a2%e3%83%8e/) |
 | [色街](stories/iromachi.md) | 2007-05-07 | 名作 因習 街 | 6892 | [dangi.link](https://dangi.link/%e8%89%b2%e8%a1%97/) |
+| [ヒッチハイク](stories/hitchhike.md) | 2009-12-24 | 名作 長編 因習 | 14081 | [dangi.link](https://dangi.link/hh-3/) |
+| [NNN臨時放送](stories/nnn-rinji-housou.md) | 2001-06-02 | 都市伝説 放送 短編 | 410 | [dangi.link](https://dangi.link/rin/) |
+| [赤いクレヨン](stories/akai-crayon.md) | 2000-08-11 | 名作 短編 家 | 508 | [dangi.link](https://dangi.link/%e8%b5%a4%e3%81%84%e3%82%af%e3%83%ac%e3%83%a8%e3%83%b3/) |
+| [おまえらのほうだよ](stories/omaera-no-hou-da-yo.md) | 2000-08-05 | 名作 短編 | 1883 | [dangi.link](https://dangi.link/%e3%81%8a%e3%81%be%e3%81%88%e3%82%89%e3%81%ae%e3%81%bb%e3%81%86%e3%81%a0%e3%82%88/) |
+| [マイナスドライバー](stories/minus-driver.md) | 2000-08-04 | 名作 短編 ヒトコワ | 621 | [dangi.link](https://dangi.link/%e3%83%9e%e3%82%a4%e3%83%8a%e3%82%b9%e3%83%89%e3%83%a9%e3%82%a4%e3%83%90%e3%83%bc/) |
+| [謎の集落](stories/nazo-no-shuraku.md) | 2006-12-30 | 名作 因習 田舎 | 2084 | [dangi.link](https://dangi.link/%e8%ac%8e%e3%81%ae%e9%9b%86%e8%90%bd/) |
+| [コッケさん](stories/kokke-san.md) | 2002-10-15 | 名作 神霊 田舎 | 3369 | [dangi.link](https://dangi.link/%e3%81%93%e3%81%a3%e3%81%91%e3%81%95%e3%82%93/) |
+| [赤口さま](stories/shakkou-sama.md) | 2003-06-19 | 名作 儀式 | 3314 | [dangi.link](https://dangi.link/%e8%b5%a4%e5%8f%a3%e3%81%95%e3%81%be/) |
+| [ヒギョウさま](stories/higyou-sama.md) | 2011-08-14 | 名作 神霊 田舎 | 5501 | [dangi.link](https://dangi.link/%e3%83%92%e3%82%ae%e3%83%a7%e3%82%a6%e3%81%95%e3%81%be/) |
+| [ワラズマ](stories/warazuma.md) | 2012-01-14 | 名作 因習 異形 | 10050 | [dangi.link](https://dangi.link/%e3%83%af%e3%83%a9%e3%82%ba%e3%83%9e/) |
+| [禍垂](stories/kasui.md) | 2012-04-24 | 名作 憑依 長編 | 12274 | [dangi.link](https://dangi.link/%e7%a6%8d%e5%9e%82%ef%bd%b6%ef%bd%bd%ef%bd%b2/) |
 | [リゾートバイト](stories/resort-bait.md) |  | 名作 長編 海 | 41279 | [anime-toshidensetsu.com](https://anime-toshidensetsu.com/resortbeit-2ch/) |
 
 ## 未収集(取得元を探している話)

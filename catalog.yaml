@@ -181,6 +181,8 @@ stories:
     tags: [長編, ヒトコワ]
     origin:
       board: 2ちゃんねる オカルト板
+    trivia:
+      - dangi.link の作品評価は佳作→名作→洒落怖殿堂→洒落怖無双の順に上がるが、最上位「洒落怖無双」に分類されているのは全1万5千件近い記事のうち本作ただ一つ(2026年8月時点)。
     source:
       <<: *dangi
       post_id: 12928
@@ -357,6 +359,129 @@ stories:
       <<: *dangi
       post_id: 16427
 
+  - slug: hitchhike
+    title: ヒッチハイク
+    tags: [名作, 長編, 因習]
+    note: ヒッチハイクで日本横断を試みた二人が絡め取られていく。きさらぎ駅・リゾートバイトと並び称される長編。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    trivia:
+      - dangi.link には同題の別話が複数ある(2002年の遠距離恋愛の話、2009年の創作シリーズの一編など)。ここに収めたのは2009年12月投稿の長編。
+    source:
+      <<: *dangi
+      post_id: 24122
+
+  - slug: nnn-rinji-housou
+    title: NNN臨時放送
+    aliases: [臨時放送]
+    tags: [都市伝説, 放送, 短編]
+    note: 深夜、放送終了後のテレビに流れたという謎の臨時放送。
+    origin:
+      board: 2ちゃんねる オカルト板
+    trivia:
+      - 「NNN臨時放送」として知られる放送系都市伝説の、2001年6月時点のオカルト板の書き込みログ。投稿者自身も「5年くらい前」の体験として書いており、伝承としてはさらに遡るとみられる。
+      - dangi.link には2015年の類似の目撃談(「明日の犠牲者」)も収録されている。
+    source:
+      <<: *dangi
+      post_id: 862
+
+  - slug: akai-crayon
+    title: 赤いクレヨン
+    tags: [名作, 短編, 家]
+    note: 不動産屋の友人が担当する空室。廊下が1mだけ短い部屋の違和感。
+    trivia:
+      - 2000年8月投稿。洒落怖最初期の短編で、「隠し部屋」ものの定番として後年まで語り継がれている。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 304
+
+  - slug: omaera-no-hou-da-yo
+    title: おまえらのほうだよ
+    tags: [名作, 短編]
+    note: 海水浴に出かけた2組のカップル。タイトルの一言に行き着く短編。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 318
+
+  - slug: minus-driver
+    title: マイナスドライバー
+    tags: [名作, 短編, ヒトコワ]
+    note: 鍵穴を覗き込んでいた子供の、目と鼻の先で起きたこと。
+    trivia:
+      - 2000年6月の過去ログを同年8月に発掘・再投稿したログ。覗いた先にいたのが人か否かは語られず、その曖昧さごと定番化した。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 326
+
+  - slug: nazo-no-shuraku
+    title: 謎の集落
+    tags: [名作, 因習, 田舎]
+    note: 地質学の卒論調査で四国の山に入った学生が行き当たったもの。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 15434
+
+  - slug: kokke-san
+    title: コッケさん
+    tags: [名作, 神霊, 田舎]
+    note: こけしを「コッケさん」と呼ばねばならない郷里の風習と禁忌。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 2631
+
+  - slug: shakkou-sama
+    title: 赤口さま
+    aliases: [しゃっこうさま]
+    tags: [名作, 儀式]
+    note: こっくりさんに似た「表」ではない交霊遊び「赤口さま」の顛末。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 4420
+
+  - slug: higyou-sama
+    title: ヒギョウさま
+    tags: [名作, 神霊, 田舎]
+    note: 島根で養鶏場を営んでいた母の実家に伝わる「ヒギョウさま」。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 27460
+
+  - slug: warazuma
+    title: ワラズマ
+    tags: [名作, 因習, 異形]
+    note: 子供の頃、旧家の屋敷で見つけてしまった奇妙な「指」と、その家の禁忌。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 28547
+
+  - slug: kasui
+    title: 禍垂
+    aliases: [カスイ]
+    tags: [名作, 憑依, 長編]
+    note: 不良仲間と封鎖されたトンネルへ肝試しに行った代償。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 28882
+
   # ---- 未収集(取得元を探している話) ----
 
   - slug: resort-bait
@@ -367,7 +492,7 @@ stories:
       board: 怖い話投稿サイト「ホラーテラー」(のち2ちゃんねるへ転載)
     trivia:
       - 2009年に怖い話投稿サイト「ホラーテラー」へ投稿され、のちに2ちゃんねるへ転載されて洒落怖の名作として定着したとされる。洒落怖スレ発ではないため、元祖まとめの後継 dangi.link には収録されていない。
-      - 2023年に実写映画化された。
+      - 2023年に実写映画化された。映画化に際し、製作側が長年不明だった投稿者「日向麦」氏とのコンタクトに成功したと報じられている。
       - 底本は全文掲載ブログ(anime-toshidensetsu.com)。冒頭と結末の文面を複数の他アーカイブと照合して同一であることを確認し、ブログ由来の広告行などは除去した。
     source:
       type: url
