@@ -15,8 +15,8 @@ catalog.yaml   蒐集カタログ。集めたい話と取得元をここに登�
 stories/       正規化した本文(YAML frontmatter 付き Markdown)
 raw/           取得時の生データ(APIレスポンスJSON / 生HTML)。再現性と検証用
 INDEX.md       蔵書目録(自動生成)
-docs/          GitHub Pages 用の閲覧サイト(自動生成)
 tools/         蒐集ツール
+.github/       GitHub Actions(Pages への自動デプロイ)
 ```
 
 各 `stories/*.md` の frontmatter には、タイトル・別名・タグ・初出情報・
@@ -45,15 +45,15 @@ python3 tools/build_site.py
 `tools/build_site.py` が `docs/` に静的な閲覧サイトを生成する
 (明朝体・ダークモード対応・前後の話へのナビ付き。JS不使用)。
 
-公開手順(初回のみ):
+公開は GitHub Actions(`.github/workflows/pages.yml`)が行う。
+push のたびに Actions 上でサイトを生成して `actions/deploy-pages` でデプロイするので、
+`docs/` はコミットしない(ローカル確認用に生成されるだけ)。
 
-1. GitHub のリポジトリページ → **Settings → Pages**
-2. Source: **Deploy from a branch**
-3. Branch: 公開したいブランチ、Folder: **/docs** を選んで Save
+初回のみ、リポジトリの **Settings → Pages → Source** が
+**GitHub Actions** になっていることを確認する
+(ワークフローが自動で有効化を試みるが、失敗した場合はここを一度切り替える)。
 
-数分後に `https://<ユーザー名>.github.io/kaidan/` で読めるようになる。
-以後は `collect.py` を実行すると `docs/` も自動再生成されるので、
-コミットして push するだけで反映される。
+公開先: `https://<ユーザー名>.github.io/kaidan/`
 
 ## 話を追加する
 
