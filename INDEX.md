@@ -2,7 +2,7 @@
 
 `tools/build_index.py` が生成する。手で編集しない。
 
-収集済み **23** 話
+収集済み **25** 話
 
 | タイトル | 投稿日 | タグ | 文字数 | 取得元 |
 |---|---|---|---|---|
@@ -28,6 +28,8 @@
 | [夜道](stories/yomichi.md) | 2002-10-19 | 短編 | 3129 | [dangi.link](https://dangi.link/%e5%a4%9c%e9%81%93/) |
 | [猛スピード](stories/mou-speed.md) | 2004-03-29 | 短編 街 怪異 | 1122 | [dangi.link](https://dangi.link/%e7%8c%9b%e3%82%b9%e3%83%94%e3%83%bc%e3%83%89/) |
 | [邪視](stories/jashi.md) | 2008-01-17 | 名作 山 怪異 呪い | 8081 | [dangi.link](https://dangi.link/%e9%82%aa%e8%a6%96/) |
+| [地下の井戸](stories/chika-no-ido.md) | 2008-01-21 | 名作 長編 ヒトコワ バイト 街 | 7886 | [dangi.link](https://dangi.link/%e5%9c%b0%e4%b8%8b%e3%81%ae%e4%ba%95%e6%88%b8/) |
+| [怪しいバイト](stories/ayashii-baito.md) | 2009-07-13 | 家 バイト 怪異 | 3967 | [dangi.link](https://dangi.link/%e6%80%aa%e3%81%97%e3%81%84%e3%83%90%e3%82%a4%e3%83%88/) |
 | [リゾートバイト](stories/resort-bait.md) |  | 名作 長編 海 | 41279 | [anime-toshidensetsu.com](https://anime-toshidensetsu.com/resortbeit-2ch/) |
 
 ## 未収集(取得元を探している話)

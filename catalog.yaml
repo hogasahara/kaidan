@@ -258,6 +258,30 @@ stories:
       <<: *dangi
       post_id: 18420
 
+  - slug: chika-no-ido
+    title: 地下の井戸
+    tags: [名作, 長編, ヒトコワ, バイト, 街]
+    note: 「運ぶだけ」の高額バイトの行き着いた先。首都高の地下、深い井戸。
+    origin:
+      board: 2ちゃんねる オカルト板
+    trivia:
+      - 投稿者自身が冒頭で「怪談じゃないから」と断って書いている実話系のヒトコワ長編。
+    source:
+      <<: *dangi
+      post_id: 18392
+
+  - slug: ayashii-baito
+    title: 怪しいバイト
+    tags: [家, バイト, 怪異]
+    note: 空き家に2泊3日泊まり込んで片付けるだけの妙に条件のいいバイト。
+    origin:
+      board: 2ちゃんねる オカルト板
+    trivia:
+      - dangi.link には同題「怪しいバイト」の別話が他に2本ある(2013年投稿の深夜の運転手と穴掘りの話、2019年投稿の電話中継の話)。ここに収めたのは2009年投稿の空き家泊まり込みの話。
+    source:
+      <<: *dangi
+      post_id: 22311
+
   # ---- 未収集(取得元を探している話) ----
 
   - slug: resort-bait
