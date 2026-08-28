@@ -282,6 +282,81 @@ stories:
       <<: *dangi
       post_id: 22311
 
+  - slug: jigoku-no-bus
+    title: 地獄のバス
+    tags: [名作, 短編]
+    note: 修学旅行のバスで、隣席の友人の様子がおかしくなっていく。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 1550
+
+  - slug: ryomen-sukuna
+    title: リョウメンスクナ
+    tags: [名作, 呪物]
+    note: 寺の解体現場で見つかった長い木箱。呪物系の代表作のひとつ。
+    origin:
+      board: 2ちゃんねる オカルト板
+    trivia:
+      - 両面宿儺(りょうめんすくな)は『日本書紀』に登場する飛騨の異形の存在で、飛騨地方には英雄として祀る伝承も残る。その名を借りた呪物系の創作とみられる。
+      - 近年は漫画『呪術廻戦』の宿儺によって名が広く知られるようになったが、本作の投稿(2005年)はそれよりずっと前。
+    source:
+      <<: *dangi
+      post_id: 11159
+
+  - slug: seppuku-show
+    title: 切腹ショー
+    tags: [名作, ヒトコワ]
+    note: 廃業した山中の温泉旅館の大浴場で行われる見世物。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 11678
+
+  - slug: sakasa-no-kikorimen
+    title: 逆さの樵面
+    tags: [名作, 因習]
+    note: 室町から続く夜神楽「千羽神楽」を継ぐ4つの家と、面を巡る因習。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 11754
+
+  - slug: kazoku-no-kikou
+    title: 家族の奇行の真相
+    tags: [名作, 家]
+    note: 真夜中に悪夢で目覚めると、家族の様子がおかしい。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 11770
+
+  - slug: umikara-yattekuru-mono
+    title: 海からやってくるモノ
+    tags: [名作, 海, 怪異]
+    note: 海だけは頑なに拒む同僚が、学生時代に冬の海辺の寒村で見たもの。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 11776
+
+  - slug: iromachi
+    title: 色街
+    tags: [名作, 因習, 街]
+    note: 行政の手で壊滅した関東の旧赤線地帯を巡る因縁。後日談付き。
+    origin:
+      board: 2ちゃんねる オカルト板
+    trivia:
+      - 投稿者自身の説明によれば、数年前に別の板へ書いた話を、過去ログが読めなくなったため後日談を加えて書き直した再投稿版(2007年)。個人特定を避けるため事実に手を加えた部分があるとも断っている。
+    source:
+      <<: *dangi
+      post_id: 16427
+
   # ---- 未収集(取得元を探している話) ----
 
   - slug: resort-bait
