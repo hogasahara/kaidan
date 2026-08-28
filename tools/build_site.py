@@ -111,6 +111,18 @@ article .meta a { color: var(--muted); }
   padding: .6rem .9rem; border-radius: .4rem;
   font-size: .8rem; color: var(--muted); margin: 0 0 2rem;
 }
+.trivia {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 1rem;
+}
+.trivia h2 {
+  font-size: .8rem; color: var(--muted); letter-spacing: .3em;
+  font-weight: 600; margin: 0 0 .5rem;
+}
+.trivia ul { margin: 0; padding-left: 1.2em; }
+.trivia li {
+  color: var(--muted); font-size: .8rem; line-height: 1.9; margin: .4em 0;
+}
 nav.pager {
   display: flex; justify-content: space-between; gap: 1rem;
   margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 1.2rem;
@@ -191,13 +203,18 @@ def body_html(body: str) -> str:
     return "\n".join(out)
 
 
-def build_story_page(fm: dict, body: str, prev_fm, next_fm) -> str:
+def build_story_page(fm: dict, body: str, prev_fm, next_fm, trivia: list[str]) -> str:
     src = fm.get("source", {})
     meta = story_meta_html(fm)
     if src.get("url"):
         meta += f' ・ <a href="{html.escape(src["url"])}">出典: {esc(src.get("site", "取得元"))}</a>'
 
     note = f'<div class="note">{esc(fm["note"])}</div>' if fm.get("note") else ""
+
+    trivia_html = ""
+    if trivia:
+        items = "".join(f"<li>{esc(t)}</li>" for t in trivia)
+        trivia_html = f'\n<section class="trivia"><h2>覚え書き</h2><ul>{items}</ul></section>'
 
     pager = ['<nav class="pager">']
     pager.append(
@@ -217,7 +234,7 @@ def build_story_page(fm: dict, body: str, prev_fm, next_fm) -> str:
 {note}
 <div class="body">
 {body_html(body)}
-</div>
+</div>{trivia_html}
 </article>
 {"".join(pager)}"""
     return PAGE.format(title=f"{fm['title']} | {SITE_TITLE}", root="../", repo=REPO_URL, body=content)
@@ -267,13 +284,15 @@ def main():
     (DOCS / ".nojekyll").write_text("")
     (DOCS / "style.css").write_text(STYLE, encoding="utf-8")
 
+    by_slug = {e["slug"]: e for e in catalog["stories"]}
     fms = [loaded[s][0] for s in slugs]
     for i, slug in enumerate(slugs):
         fm, body = loaded[slug]
         prev_fm = fms[i - 1] if i > 0 else None
         next_fm = fms[i + 1] if i + 1 < len(fms) else None
+        trivia = by_slug.get(slug, {}).get("trivia") or []
         (DOCS / "s" / f"{slug}.html").write_text(
-            build_story_page(fm, body, prev_fm, next_fm), encoding="utf-8"
+            build_story_page(fm, body, prev_fm, next_fm, trivia), encoding="utf-8"
         )
 
     (DOCS / "index.html").write_text(build_index_page(fms, wanted), encoding="utf-8")
