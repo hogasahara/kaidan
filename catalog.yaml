@@ -1,0 +1,241 @@
+# 蒐集カタログ
+#
+# ここに「集めたい話」を1エントリずつ登録し、tools/collect.py で取得する。
+# 取得済みの本文は stories/<slug>.md に、取得時の生データは raw/<slug>.json に保存される。
+#
+# エントリの書式:
+#   - slug:    ファイル名になる識別子(ローマ字推奨)
+#     title:   正式タイトル
+#     aliases: 別名・表記ゆれ(任意)
+#     tags:    分類タグ(任意)
+#     note:    一言メモ(任意)
+#     origin:  初出情報(わかる範囲で。不確かなら書かない)
+#     source:  取得元。type: wordpress なら WP REST API 経由で取得。
+#              type: url なら生HTMLを保存してテキスト抽出(精度は落ちる)。
+#     status:  wanted = 取得元未定・未発見。collect.py はスキップする。
+#
+# dangi.link は旧 syarecowa.moo.jp(死ぬ程洒落にならない怖い話を集めてみない?まとめ)の移転先。
+
+defaults:
+  wordpress_api: &dangi
+    type: wordpress
+    site: dangi.link
+    api: https://dangi.link/wp-json/wp/v2
+
+stories:
+  - slug: hasshaku-sama
+    title: 八尺様
+    tags: [名作, 田舎, 怪異]
+    note: 2008年投稿。洒落怖を代表する田舎の怪異譚。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 20162
+
+  - slug: kisaragi-eki
+    title: きさらぎ駅
+    tags: [名作, 実況, 異界]
+    note: 2004年の実況形式スレが初出。異界駅ものの元祖。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 身のまわりで変なことが起こったら実況するスレ
+    source:
+      <<: *dangi
+      post_id: 26283
+
+  - slug: kotoribako
+    title: コトリバコ
+    tags: [名作, 呪物, 長編]
+    note: 2005年投稿。呪物系の代表作。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 9722
+
+  - slug: kunekune
+    title: くねくね
+    tags: [名作, 田舎, 怪異]
+    note: 2003年頃に広まった、田園の白い揺れるものの怪。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 3566
+
+  - slug: kyotou-o
+    title: 巨頭オ
+    tags: [名作, 短編, 田舎]
+    note: 廃村の看板「巨頭オ」。短編の代表格。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 12293
+
+  - slug: saruyume
+    title: 猿夢
+    tags: [名作, 夢]
+    note: 悪夢もの。「あなたは当分来ませんね」。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 332
+
+  - slug: saruyume-plus
+    title: 猿夢+
+    aliases: [猿夢(後日談つき)]
+    tags: [夢]
+    note: 猿夢の後日談を含む版。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 3983
+
+  - slug: real
+    title: リアル
+    tags: [名作, 長編]
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 26568
+
+  - slug: yamanoke
+    title: ヤマノケ
+    tags: [名作, 山, 憑依]
+    note: 山の怪。「テン・ソウ・メツ」。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 15709
+
+  - slug: kankandara
+    title: 姦姦蛇螺
+    tags: [名作, 因習, 異形]
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 26943
+
+  - slug: pandora
+    title: 禁后
+    aliases: [パンドラ]
+    tags: [名作, 呪物, 因習, 長編]
+    note: 「禁后」と書いてパンドラと読む。家系と呪いの長編。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 28417
+
+  - slug: hisaruki
+    title: ヒサルキ
+    tags: [名作, 謎, 子供]
+    note: 子供が口にする「ヒサルキ」を巡る一連の話群の発端。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 3276
+
+  - slug: ura-s-ku
+    title: 裏S区
+    tags: [長編, ヒトコワ, 因習]
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 15915
+
+  - slug: kanhimo
+    title: かんひも
+    tags: [名作, 神霊]
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 11374
+
+  - slug: kiken-na-koukishin
+    title: 危険な好奇心
+    tags: [長編, ヒトコワ]
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 12928
+
+  - slug: rule
+    title: ルール
+    tags: [短編]
+    note: 美大の暗室での話。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 28609
+
+  - slug: ushi-no-kubi
+    title: 牛の首
+    tags: [メタ怪談, 古典]
+    note: 「あまりに怖くて誰も語れない」という古典的メタ怪談の2ch版。
+    source:
+      <<: *dangi
+      post_id: 695
+
+  - slug: shinigami
+    title: 死神
+    tags: []
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 4585
+
+  - slug: akemi-chan
+    title: アケミちゃん
+    tags: []
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 28788
+
+  - slug: yomichi
+    title: 夜道
+    tags: [短編]
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 2599
+
+  # ---- 未収集(取得元を探している話) ----
+
+  - slug: resort-bait
+    title: リゾートバイト
+    tags: [名作, 長編, 田舎]
+    note: 2009年頃の長編名作。dangi.link には同題の記事が見当たらないため取得元を探し中。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    status: wanted
+
+  - slug: ikai-elevator
+    title: 異世界エレベーター
+    aliases: [エレベーターで異世界へ行く方法]
+    tags: [儀式, 異界]
+    note: 儀式系ネットロア。まとまった原文の所在を探し中。
+    status: wanted
