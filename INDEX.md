@@ -2,7 +2,7 @@
 
 `tools/build_index.py` が生成する。手で編集しない。
 
-収集済み **20** 話
+収集済み **21** 話
 
 | タイトル | 投稿日 | タグ | 文字数 | 取得元 |
 |---|---|---|---|---|
@@ -26,8 +26,8 @@
 | [死神](stories/shinigami.md) | 2003-07-21 |  | 529 | [dangi.link](https://dangi.link/%e6%ad%bb%e7%a5%9e/) |
 | [アケミちゃん](stories/akemi-chan.md) | 2012-04-07 |  | 13969 | [dangi.link](https://dangi.link/%e3%82%a2%e3%82%b1%e3%83%9f%e3%81%a1%e3%82%83%e3%82%93/) |
 | [夜道](stories/yomichi.md) | 2002-10-19 | 短編 | 3129 | [dangi.link](https://dangi.link/%e5%a4%9c%e9%81%93/) |
+| [リゾートバイト](stories/resort-bait.md) |  | 名作 長編 海 | 41279 | [anime-toshidensetsu.com](https://anime-toshidensetsu.com/resortbeit-2ch/) |
 
 ## 未収集(取得元を探している話)
 
-- **リゾートバイト** — 2009年頃の長編名作。dangi.link には同題の記事が見当たらないため取得元を探し中。
 - **異世界エレベーター** — 儀式系ネットロア。まとまった原文の所在を探し中。

@@ -179,8 +179,15 @@ def decode_html(data: bytes, content_type: str) -> str:
 
 
 def collect_url(entry: dict) -> dict | None:
-    """まとめサイトなど任意のページ。生HTMLを必ず保存し、本文抽出は近似。"""
-    url = entry["source"]["url"]
+    """まとめサイトなど任意のページ。生HTMLを必ず保存し、本文抽出は近似。
+
+    catalog の source に指定できる抽出オプション:
+      text_start: この文字列以降を本文とする(冒頭のナビ・見出しを除く)
+      text_end:   この文字列の手前までを本文とする(末尾の広告・関連記事を除く)
+      drop_lines: この文字列と完全一致する行を除去(本文中の「スポンサーリンク」等)
+    """
+    src = entry["source"]
+    url = src["url"]
     data, content_type = fetch(url, binary=True)
     (RAW / f"{entry['slug']}.html").write_bytes(data)
     page = decode_html(data, content_type)
@@ -190,12 +197,34 @@ def collect_url(entry: dict) -> dict | None:
         if m:
             fragment = m.group(0)
             break
+    text = html_to_text(fragment)
+
+    extraction = "heuristic"
+    if src.get("text_start"):
+        i = text.find(src["text_start"])
+        if i < 0:
+            print(f"    text_start が見つかりません: {src['text_start']!r}")
+            return None
+        text = text[i:]
+        extraction = "markers"
+    if src.get("text_end"):
+        j = text.find(src["text_end"], 1)
+        if j < 0:
+            print(f"    text_end が見つかりません: {src['text_end']!r}")
+            return None
+        text = text[:j]
+        extraction = "markers"
+    if src.get("drop_lines"):
+        drop = {s.strip() for s in src["drop_lines"]}
+        text = "\n".join(l for l in text.split("\n") if l.strip() not in drop)
+    text = re.sub(r"\n{3,}", "\n\n", text).strip("\n") + "\n"
+
     return {
-        "text": html_to_text(fragment),
+        "text": text,
         "source_meta": {
             "site": urllib.parse.urlparse(url).netloc,
             "url": url,
-            "extraction": "heuristic",  # 手作業での整形を推奨
+            "extraction": extraction,  # heuristic のままなら手作業での整形を推奨
         },
     }
 

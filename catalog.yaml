@@ -226,12 +226,16 @@ stories:
 
   - slug: resort-bait
     title: リゾートバイト
-    tags: [名作, 長編, 田舎]
-    note: 2009年頃の長編名作。dangi.link には同題の記事が見当たらないため取得元を探し中。
+    tags: [名作, 長編, 海]
+    note: 2009年に投稿サイト「ホラーテラー」に投稿され、2chに転載されて広まった長編名作。2023年映画化。
     origin:
-      board: 2ちゃんねる オカルト板
-      series: 死ぬ程洒落にならない怖い話を集めてみない?
-    status: wanted
+      board: 怖い話投稿サイト「ホラーテラー」(のち2ちゃんねるへ転載)
+    source:
+      type: url
+      url: https://anime-toshidensetsu.com/resortbeit-2ch/
+      text_start: まずはじめに言っておくが
+      text_end: 引用元
+      drop_lines: [スポンサーリンク]
 
   - slug: ikai-elevator
     title: 異世界エレベーター
