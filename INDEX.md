@@ -30,9 +30,7 @@
 | [邪視](stories/jashi.md) | 2008-01-17 | 名作 山 怪異 呪い | 8081 | [dangi.link](https://dangi.link/%e9%82%aa%e8%a6%96/) |
 | [地下の井戸](stories/chika-no-ido.md) | 2008-01-21 | 名作 長編 ヒトコワ バイト 街 | 7886 | [dangi.link](https://dangi.link/%e5%9c%b0%e4%b8%8b%e3%81%ae%e4%ba%95%e6%88%b8/) |
 | [怪しいバイト](stories/ayashii-baito.md) | 2009-07-13 | 家 バイト 怪異 | 3967 | [dangi.link](https://dangi.link/%e6%80%aa%e3%81%97%e3%81%84%e3%83%90%e3%82%a4%e3%83%88/) |
-| [地獄のバス](stories/jigoku-no-bus.md) | 2002-01-02 | 名作 短編 | 3387 | [dangi.link](https://dangi.link/%e5%9c%b0%e7%8d%84%e3%81%ae%e3%83%90%e3%82%b9/) |
 | [リョウメンスクナ](stories/ryomen-sukuna.md) | 2005-09-21 | 名作 呪物 | 7055 | [dangi.link](https://dangi.link/%e3%83%aa%e3%83%a7%e3%82%a6%e3%83%a1%e3%83%b3%e3%82%b9%e3%82%af%e3%83%8a/) |
-| [切腹ショー](stories/seppuku-show.md) | 2005-11-24 | 名作 ヒトコワ | 4411 | [dangi.link](https://dangi.link/%e5%88%87%e8%85%b9%e3%82%b7%e3%83%a7%e3%83%bc/) |
 | [逆さの樵面](stories/sakasa-no-kikorimen.md) | 2005-12-11 | 名作 因習 | 8012 | [dangi.link](https://dangi.link/%e9%80%86%e3%81%95%e3%81%ae%e6%a8%b5%e9%9d%a2/) |
 | [家族の奇行の真相](stories/kazoku-no-kikou.md) | 2005-12-07 | 名作 家 | 3267 | [dangi.link](https://dangi.link/%e5%ae%b6%e6%97%8f%e3%81%ae%e5%a5%87%e8%a1%8c%e3%81%ae%e7%9c%9f%e7%9b%b8/) |
 | [海からやってくるモノ](stories/umikara-yattekuru-mono.md) | 2005-12-07 | 名作 海 怪異 | 2621 | [dangi.link](https://dangi.link/%e6%b5%b7%e3%81%8b%e3%82%89%e3%82%84%e3%81%a3%e3%81%a6%e3%81%8f%e3%82%8b%e3%83%a2%e3%83%8e/) |
@@ -48,6 +46,8 @@
 | [ヒギョウさま](stories/higyou-sama.md) | 2011-08-14 | 名作 神霊 田舎 | 5501 | [dangi.link](https://dangi.link/%e3%83%92%e3%82%ae%e3%83%a7%e3%82%a6%e3%81%95%e3%81%be/) |
 | [ワラズマ](stories/warazuma.md) | 2012-01-14 | 名作 因習 異形 | 10050 | [dangi.link](https://dangi.link/%e3%83%af%e3%83%a9%e3%82%ba%e3%83%9e/) |
 | [禍垂](stories/kasui.md) | 2012-04-24 | 名作 憑依 長編 | 12274 | [dangi.link](https://dangi.link/%e7%a6%8d%e5%9e%82%ef%bd%b6%ef%bd%bd%ef%bd%b2/) |
+| [生き人形](stories/iki-ningyou.md) | 2000-08-24 | 名作 人形 呪い | 4897 | [dangi.link](https://dangi.link/%e7%94%9f%e3%81%8d%e4%ba%ba%e5%bd%a2/) |
+| [雨の音](stories/ame-no-oto.md) | 2000-08-04 | 名作 短編 | 1343 | [dangi.link](https://dangi.link/%e9%9b%a8%e3%81%ae%e9%9f%b3/) |
 | [リゾートバイト](stories/resort-bait.md) |  | 名作 長編 海 | 41279 | [anime-toshidensetsu.com](https://anime-toshidensetsu.com/resortbeit-2ch/) |
 
 ## 未収集(取得元を探している話)

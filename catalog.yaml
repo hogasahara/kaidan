@@ -284,16 +284,6 @@ stories:
       <<: *dangi
       post_id: 22311
 
-  - slug: jigoku-no-bus
-    title: 地獄のバス
-    tags: [名作, 短編]
-    note: 修学旅行のバスで、隣席の友人の様子がおかしくなっていく。
-    origin:
-      board: 2ちゃんねる オカルト板
-    source:
-      <<: *dangi
-      post_id: 1550
-
   - slug: ryomen-sukuna
     title: リョウメンスクナ
     tags: [名作, 呪物]
@@ -306,16 +296,6 @@ stories:
     source:
       <<: *dangi
       post_id: 11159
-
-  - slug: seppuku-show
-    title: 切腹ショー
-    tags: [名作, ヒトコワ]
-    note: 廃業した山中の温泉旅館の大浴場で行われる見世物。
-    origin:
-      board: 2ちゃんねる オカルト板
-    source:
-      <<: *dangi
-      post_id: 11678
 
   - slug: sakasa-no-kikorimen
     title: 逆さの樵面
@@ -481,6 +461,29 @@ stories:
     source:
       <<: *dangi
       post_id: 28882
+
+  - slug: iki-ningyou
+    title: 生き人形
+    tags: [名作, 人形, 呪い]
+    note: 稲川淳二を心霊の語り手たらしめた「呪いの生き人形」。昭和53年に始まる祟りの記録。
+    trivia:
+      - ネット発ではなく、稲川淳二が長年語ってきた実話怪談「生き人形」を2000年8月に2chへまとめ直した投稿(牛の首と同じく語り直し版の収録)。
+      - 末尾に「これをコピペしてる間にフリーズしまくり」という投稿者自身の追記が残っており、当時の空気ごと保存されている。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 282
+
+  - slug: ame-no-oto
+    title: 雨の音
+    tags: [名作, 短編]
+    note: 雨の夜のトンネル肝試し。帰りのファミレスで店員が口にしたこと。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      <<: *dangi
+      post_id: 325
 
   # ---- 未収集(取得元を探している話) ----
 
