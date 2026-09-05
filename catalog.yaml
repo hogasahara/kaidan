@@ -510,11 +510,8 @@ stories:
 
   - slug: akuma-no-saidai-no-mokuteki
     title: 悪魔の最大の目的
-    aliases: [閉鎖された村]
     tags: [名作, 因習, 宗教]
     note: 教会の家に育った「俺」が高校時代に体験した、ある一族と土地を巡る話。
-    trivia:
-      - 2007年5月25日、洒落怖スレに ID:YqmY+fAJ0 が投稿したレス150〜162の話。まとめサイトによって題が異なり、dangi.link では「悪魔の最大の目的」、horror2ch.com では「閉鎖された村」として掲載されている同一作(冒頭・末尾の文面一致を確認済み)。まとめ間の表記ゆれで別作品に見える実例。
     origin:
       board: 2ちゃんねる オカルト板
       series: 死ぬ程洒落にならない怖い話を集めてみない?
@@ -555,6 +552,26 @@ stories:
         - https://horror2ch.com/archives/post-2929.html
         - https://horror2ch.com/archives/post-2929.html/2
         - https://horror2ch.com/archives/post-2929.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: heisa-sareta-mura
+    title: 閉鎖された村
+    tags: [実況, 田舎, 因習]
+    note: 大阪住みの投稿者が3年前に訪れた、島根県の「閉鎖された村」の実況語り。
+    trivia:
+      - 2014年6月19日に立った実況形式のスレのログ(名無し表記「名も無き被検体774号+」の板)。
+      - 収録時、当初サイドバーの他記事抜粋を本文と取り違えて「悪魔の最大の目的」と同一と誤判定し、オーナーの指摘で訂正した。両者は無関係の別作品。
+    origin:
+      board: 2ちゃんねる
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2476.html
+        - https://horror2ch.com/archives/post-2476.html/2
+        - https://horror2ch.com/archives/post-2476.html/3
+        - https://horror2ch.com/archives/post-2476.html/4
+        - https://horror2ch.com/archives/post-2476.html/5
+        - https://horror2ch.com/archives/post-2476.html/6
       drop_lines: [スポンサーリンク]
 
   # ---- 未収集(取得元を探している話) ----

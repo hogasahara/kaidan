@@ -1,8 +1,6 @@
 ---
 title: 悪魔の最大の目的
 slug: akuma-no-saidai-no-mokuteki
-aliases:
-- 閉鎖された村
 tags:
 - 名作
 - 因習
@@ -22,7 +20,7 @@ source:
   - Part 166
   - 名作
   - 洒落怖
-fetched_at: '2026-09-05T06:11:01Z'
+fetched_at: '2026-09-05T06:17:30Z'
 chars: 7554
 sha256: 9ce4dfcdd2198d7183f34a6df84a1230c10d8380a182574ef565dc794eec3bea
 ---
