@@ -2,7 +2,7 @@
 
 `tools/build_index.py` が生成する。手で編集しない。
 
-収集済み **43** 話
+収集済み **44** 話
 
 | タイトル | 投稿日 | タグ | 文字数 | 取得元 |
 |---|---|---|---|---|
@@ -48,6 +48,7 @@
 | [禍垂](stories/kasui.md) | 2012-04-24 | 名作 憑依 長編 | 12274 | [dangi.link](https://dangi.link/%e7%a6%8d%e5%9e%82%ef%bd%b6%ef%bd%bd%ef%bd%b2/) |
 | [生き人形](stories/iki-ningyou.md) | 2000-08-24 | 名作 人形 呪い | 4897 | [dangi.link](https://dangi.link/%e7%94%9f%e3%81%8d%e4%ba%ba%e5%bd%a2/) |
 | [雨の音](stories/ame-no-oto.md) | 2000-08-04 | 名作 短編 | 1343 | [dangi.link](https://dangi.link/%e9%9b%a8%e3%81%ae%e9%9f%b3/) |
+| [一つの村が消えた話をする](stories/hitotsu-no-mura.md) | 2014-12-19 | 名作 長編 因習 実況 | 26965 | [llike.net](https://llike.net/2ch/fear/kietamura/) |
 | [リゾートバイト](stories/resort-bait.md) |  | 名作 長編 海 | 41279 | [anime-toshidensetsu.com](https://anime-toshidensetsu.com/resortbeit-2ch/) |
 
 ## 未収集(取得元を探している話)

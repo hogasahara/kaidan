@@ -74,7 +74,8 @@ def html_to_text(fragment: str) -> str:
     s = _TAG.sub("", s)
     s = html.unescape(s)
     s = s.replace("\r\n", "\n").replace("\r", "\n")
-    lines = [line.rstrip() for line in s.split("\n")]
+    # 行頭のタブはHTMLのインデント汚れなので落とす(スペース・全角空白は本文の字下げとして保持)
+    lines = [re.sub(r"^\t+", "", line).rstrip() for line in s.split("\n")]
     s = "\n".join(lines)
     s = re.sub(r"\n{3,}", "\n\n", s)
     return s.strip("\n") + "\n"
@@ -182,51 +183,72 @@ def collect_url(entry: dict) -> dict | None:
     """まとめサイトなど任意のページ。生HTMLを必ず保存し、本文抽出は近似。
 
     catalog の source に指定できる抽出オプション:
-      text_start: この文字列以降を本文とする(冒頭のナビ・見出しを除く)
-      text_end:   この文字列の手前までを本文とする(末尾の広告・関連記事を除く)
-      drop_lines: この文字列と完全一致する行を除去(本文中の「スポンサーリンク」等)
+      urls:          分割掲載ページのリスト(順に取得して結合)。単一なら url でよい
+      text_start:    この文字列以降を本文とする(冒頭のナビ・見出しを除く)
+      text_end:      この文字列の手前までを本文とする(末尾の広告・関連記事を除く)
+      text_start_re / text_end_re: 上と同じだが正規表現。各ページに個別に適用される
+                     (例: text_start_re: '\\n\\d{1,4} ：' で最初の2chレスヘッダから)
+      drop_lines:    この文字列と完全一致する行を除去(本文中の「スポンサーリンク」等)
     """
     src = entry["source"]
-    url = src["url"]
-    data, content_type = fetch(url, binary=True)
-    (RAW / f"{entry['slug']}.html").write_bytes(data)
-    page = decode_html(data, content_type)
-    fragment = page
-    for pat in _CONTENT_HINTS:
-        m = pat.search(page)
-        if m:
-            fragment = m.group(0)
-            break
-    text = html_to_text(fragment)
-
+    urls = src.get("urls") or [src["url"]]
     extraction = "heuristic"
-    if src.get("text_start"):
-        i = text.find(src["text_start"])
-        if i < 0:
-            print(f"    text_start が見つかりません: {src['text_start']!r}")
-            return None
-        text = text[i:]
-        extraction = "markers"
-    if src.get("text_end"):
-        j = text.find(src["text_end"], 1)
-        if j < 0:
-            print(f"    text_end が見つかりません: {src['text_end']!r}")
-            return None
-        text = text[:j]
-        extraction = "markers"
+    parts = []
+    for n, url in enumerate(urls, 1):
+        data, content_type = fetch(url, binary=True)
+        suffix = f".{n}" if len(urls) > 1 else ""
+        (RAW / f"{entry['slug']}{suffix}.html").write_bytes(data)
+        page = decode_html(data, content_type)
+        fragment = page
+        for pat in _CONTENT_HINTS:
+            m = pat.search(page)
+            if m:
+                fragment = m.group(0)
+                break
+        text = html_to_text(fragment)
+
+        if src.get("text_start_re"):
+            m = re.search(src["text_start_re"], text)
+            if not m:
+                print(f"    text_start_re がページ{n}で見つかりません")
+                return None
+            text = text[m.start():]
+            extraction = "markers"
+        elif src.get("text_start") and n == 1:
+            i = text.find(src["text_start"])
+            if i < 0:
+                print(f"    text_start が見つかりません: {src['text_start']!r}")
+                return None
+            text = text[i:]
+            extraction = "markers"
+        if src.get("text_end_re"):
+            m = re.search(src["text_end_re"], text[1:])
+            if m:
+                text = text[:1 + m.start()]
+                extraction = "markers"
+        elif src.get("text_end") and n == len(urls):
+            j = text.find(src["text_end"], 1)
+            if j < 0:
+                print(f"    text_end が見つかりません: {src['text_end']!r}")
+                return None
+            text = text[:j]
+            extraction = "markers"
+        parts.append(text.strip("\n"))
+
+    text = "\n\n".join(parts)
     if src.get("drop_lines"):
         drop = {s.strip() for s in src["drop_lines"]}
         text = "\n".join(l for l in text.split("\n") if l.strip() not in drop)
     text = re.sub(r"\n{3,}", "\n\n", text).strip("\n") + "\n"
 
-    return {
-        "text": text,
-        "source_meta": {
-            "site": urllib.parse.urlparse(url).netloc,
-            "url": url,
-            "extraction": extraction,  # heuristic のままなら手作業での整形を推奨
-        },
+    meta = {
+        "site": urllib.parse.urlparse(urls[0]).netloc,
+        "url": urls[0],
+        "extraction": extraction,  # heuristic のままなら手作業での整形を推奨
     }
+    if len(urls) > 1:
+        meta["urls"] = list(urls)
+    return {"text": text, "source_meta": meta}
 
 
 # ---------------------------------------------------------------- 保存

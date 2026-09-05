@@ -485,6 +485,29 @@ stories:
       <<: *dangi
       post_id: 325
 
+  - slug: hitotsu-no-mura
+    title: 一つの村が消えた話をする
+    aliases: [一つの村が消えた話]
+    tags: [名作, 長編, 因習, 実況]
+    note: 山あいの村の祭「辿静祭」と三つの禁忌。肝試しの晩から始まる災厄の記録。
+    origin:
+      board: 2ちゃんねる ニュー速VIP板
+      thread_url: http://viper.2ch.sc/test/read.cgi/news4vip/1418952965/
+    trivia:
+      - 2014年12月、ニュー速VIP板に「伝者」の名義で投稿された(元スレは viper.2ch.sc の news4vip/1418952965)。洒落怖スレ発ではないため dangi.link には収録されていない。
+      - 質疑応答を挟む実況形式で、本編・後日談・友人Bの遺書からなる。結末が明確に語られないまま終わる構成も特徴として知られる。
+      - 底本はレス番号・ID・名義を残す llike.net のログ(4分割を結合)。元スレの 2ch.sc アーカイブはこの環境からは接続拒否で直接照合できず、全文一枚の別サイト(kaiki-catharsis.com、レスヘッダ無し)と突き合わせて確認した。
+    source:
+      type: url
+      urls:
+        - https://llike.net/2ch/fear/kietamura/
+        - https://llike.net/2ch/fear/kietamura/2.htm
+        - https://llike.net/2ch/fear/kietamura/3.htm
+        - https://llike.net/2ch/fear/kietamura/4.htm
+      text_start_re: '\n[ \t]*\d{1,4} ：.{0,40}20\d\d/\d\d/\d\d'
+      text_end_re: '元スレ：|【閲覧注意】'
+      drop_lines: [スポンサーリンク]
+
   # ---- 未収集(取得元を探している話) ----
 
   - slug: resort-bait
