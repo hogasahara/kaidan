@@ -157,6 +157,48 @@ def collect_wordpress(entry: dict) -> dict | None:
 # ---------------------------------------------------------------- 汎用URL取得
 
 _CHARSET_META = re.compile(rb"charset=[\"']?([\w-]+)", re.I)
+_CONTENT_CLASS = re.compile(
+    r'<div[^>]+class="[^"]*(?:entry-content|post_content|post-content|article-body|main-content)[^"]*"'
+)
+
+
+def extract_content_div(page: str) -> str | None:
+    """WordPress系の本文div を、入れ子を数えて閉じタグまで正しく切り出す。
+
+    サイドバーに他記事の抜粋が入る巨大ページでは、正規表現の近似より確実。
+    """
+    m = _CONTENT_CLASS.search(page)
+    if not m:
+        return None
+    depth = 0
+    for t in re.finditer(r"<div\b|</div>", page[m.start():]):
+        depth += 1 if t.group(0) != "</div>" else -1
+        if depth == 0:
+            return page[m.start():m.start() + t.end()]
+    return None
+
+
+_JUNK_DIV = re.compile(r'<div[^>]+class="[^"]*(?:pochipp-box|ad-area|swell-ad)[^"]*"')
+
+
+def strip_junk_divs(fragment: str) -> str:
+    """本文div内に挿入された広告ブロック(ポチップ等)を入れ子ごと除去する。"""
+    while True:
+        m = _JUNK_DIV.search(fragment)
+        if not m:
+            return fragment
+        depth = 0
+        end = None
+        for t in re.finditer(r"<div\b|</div>", fragment[m.start():]):
+            depth += 1 if t.group(0) != "</div>" else -1
+            if depth == 0:
+                end = m.start() + t.end()
+                break
+        if end is None:
+            return fragment
+        fragment = fragment[:m.start()] + fragment[end:]
+
+
 _CONTENT_HINTS = [
     re.compile(r"<article\b.*?</article>", re.I | re.S),
     re.compile(r"<div[^>]+(?:id|class)=\"[^\"]*(?:entry-content|article-body|post-content|main-content)[^\"]*\".*?</div>", re.I | re.S),
@@ -199,12 +241,16 @@ def collect_url(entry: dict) -> dict | None:
         suffix = f".{n}" if len(urls) > 1 else ""
         (RAW / f"{entry['slug']}{suffix}.html").write_bytes(data)
         page = decode_html(data, content_type)
-        fragment = page
-        for pat in _CONTENT_HINTS:
-            m = pat.search(page)
-            if m:
-                fragment = m.group(0)
-                break
+        fragment = extract_content_div(page)
+        if fragment is not None:
+            fragment = strip_junk_divs(fragment)
+        else:
+            fragment = page
+            for pat in _CONTENT_HINTS:
+                m = pat.search(page)
+                if m:
+                    fragment = m.group(0)
+                    break
         text = html_to_text(fragment)
 
         if src.get("text_start_re"):

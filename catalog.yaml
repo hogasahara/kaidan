@@ -508,6 +508,55 @@ stories:
       text_end_re: '元スレ：|【閲覧注意】'
       drop_lines: [スポンサーリンク]
 
+  - slug: akuma-no-saidai-no-mokuteki
+    title: 悪魔の最大の目的
+    aliases: [閉鎖された村]
+    tags: [名作, 因習, 宗教]
+    note: 教会の家に育った「俺」が高校時代に体験した、ある一族と土地を巡る話。
+    trivia:
+      - 2007年5月25日、洒落怖スレに ID:YqmY+fAJ0 が投稿したレス150〜162の話。まとめサイトによって題が異なり、dangi.link では「悪魔の最大の目的」、horror2ch.com では「閉鎖された村」として掲載されている同一作(冒頭・末尾の文面一致を確認済み)。まとめ間の表記ゆれで別作品に見える実例。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 16868
+
+  - slug: yaneura-kara-hen-na-oto
+    title: 屋根裏から変な音する。獣害に詳しいやつ来てくれ
+    aliases: [屋根裏から変な音する]
+    tags: [実況, 家]
+    note: 獣害の相談として始まったスレが、次第に別のものの実況になっていく。
+    trivia:
+      - 2016年3月、野生生物板(名無しの表記が「名無虫さん」)に立ったスレの実況ログ。スレッドタイトルがそのまま作品名として流通している。
+      - 底本は horror2ch.com(4分割を結合、レス1〜114)。本文に挿入されていた商品広告ブロックは除去した。
+    origin:
+      board: 2ちゃんねる 野生生物板
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1928.html
+        - https://horror2ch.com/archives/post-1928.html/2
+        - https://horror2ch.com/archives/post-1928.html/3
+        - https://horror2ch.com/archives/post-1928.html/4
+      drop_lines: [スポンサーリンク]
+
+  - slug: sankan-no-haioku
+    title: 山間の廃屋の部屋
+    tags: [家, 田舎, ヒトコワ]
+    note: 傷害事件の報道で容疑者の名前を必ず確かめる友人タカオの、その理由。
+    trivia:
+      - 底本の horror2ch.com 版はレスヘッダ(番号・日付・ID)の無い整形版で、初出スレ・投稿日は特定できていない。dangi.link には本文検索でも見当たらない。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2929.html
+        - https://horror2ch.com/archives/post-2929.html/2
+        - https://horror2ch.com/archives/post-2929.html/3
+      drop_lines: [スポンサーリンク]
+
   # ---- 未収集(取得元を探している話) ----
 
   - slug: resort-bait
