@@ -2,7 +2,7 @@
 
 `tools/build_index.py` が生成する。手で編集しない。
 
-収集済み **44** 話
+収集済み **48** 話
 
 | タイトル | 投稿日 | タグ | 文字数 | 取得元 |
 |---|---|---|---|---|
@@ -49,6 +49,10 @@
 | [生き人形](stories/iki-ningyou.md) | 2000-08-24 | 名作 人形 呪い | 4897 | [dangi.link](https://dangi.link/%e7%94%9f%e3%81%8d%e4%ba%ba%e5%bd%a2/) |
 | [雨の音](stories/ame-no-oto.md) | 2000-08-04 | 名作 短編 | 1343 | [dangi.link](https://dangi.link/%e9%9b%a8%e3%81%ae%e9%9f%b3/) |
 | [一つの村が消えた話をする](stories/hitotsu-no-mura.md) | 2014-12-19 | 名作 長編 因習 実況 | 26965 | [llike.net](https://llike.net/2ch/fear/kietamura/) |
+| [悪魔の最大の目的](stories/akuma-no-saidai-no-mokuteki.md) | 2007-05-25 | 名作 因習 宗教 | 7554 | [dangi.link](https://dangi.link/%e6%82%aa%e9%ad%94%e3%81%ae%e6%9c%80%e5%a4%a7%e3%81%ae%e6%94%bb%e6%92%83/) |
+| [屋根裏から変な音する。獣害に詳しいやつ来てくれ](stories/yaneura-kara-hen-na-oto.md) | 2016-03-16 | 実況 家 | 9690 | [horror2ch.com](https://horror2ch.com/archives/post-1928.html) |
+| [山間の廃屋の部屋](stories/sankan-no-haioku.md) |  | 家 田舎 ヒトコワ | 9770 | [horror2ch.com](https://horror2ch.com/archives/post-2929.html) |
+| [閉鎖された村](stories/heisa-sareta-mura.md) | 2014-06-19 | 実況 田舎 因習 | 17812 | [horror2ch.com](https://horror2ch.com/archives/post-2476.html) |
 | [リゾートバイト](stories/resort-bait.md) |  | 名作 長編 海 | 41279 | [anime-toshidensetsu.com](https://anime-toshidensetsu.com/resortbeit-2ch/) |
 
 ## 未収集(取得元を探している話)

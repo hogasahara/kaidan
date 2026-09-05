@@ -508,6 +508,72 @@ stories:
       text_end_re: '元スレ：|【閲覧注意】'
       drop_lines: [スポンサーリンク]
 
+  - slug: akuma-no-saidai-no-mokuteki
+    title: 悪魔の最大の目的
+    tags: [名作, 因習, 宗教]
+    note: 教会の家に育った「俺」が高校時代に体験した、ある一族と土地を巡る話。
+    origin:
+      board: 2ちゃんねる オカルト板
+      series: 死ぬ程洒落にならない怖い話を集めてみない?
+    source:
+      <<: *dangi
+      post_id: 16868
+
+  - slug: yaneura-kara-hen-na-oto
+    title: 屋根裏から変な音する。獣害に詳しいやつ来てくれ
+    aliases: [屋根裏から変な音する]
+    tags: [実況, 家]
+    note: 獣害の相談として始まったスレが、次第に別のものの実況になっていく。
+    trivia:
+      - 2016年3月、野生生物板(名無しの表記が「名無虫さん」)に立ったスレの実況ログ。スレッドタイトルがそのまま作品名として流通している。
+      - 底本は horror2ch.com(4分割を結合、レス1〜114)。本文に挿入されていた商品広告ブロックは除去した。
+    origin:
+      board: 2ちゃんねる 野生生物板
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1928.html
+        - https://horror2ch.com/archives/post-1928.html/2
+        - https://horror2ch.com/archives/post-1928.html/3
+        - https://horror2ch.com/archives/post-1928.html/4
+      drop_lines: [スポンサーリンク]
+
+  - slug: sankan-no-haioku
+    title: 山間の廃屋の部屋
+    tags: [家, 田舎, ヒトコワ]
+    note: 傷害事件の報道で容疑者の名前を必ず確かめる友人タカオの、その理由。
+    trivia:
+      - 底本の horror2ch.com 版はレスヘッダ(番号・日付・ID)の無い整形版で、初出スレ・投稿日は特定できていない。dangi.link には本文検索でも見当たらない。
+    origin:
+      board: 2ちゃんねる オカルト板
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2929.html
+        - https://horror2ch.com/archives/post-2929.html/2
+        - https://horror2ch.com/archives/post-2929.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: heisa-sareta-mura
+    title: 閉鎖された村
+    tags: [実況, 田舎, 因習]
+    note: 大阪住みの投稿者が3年前に訪れた、島根県の「閉鎖された村」の実況語り。
+    trivia:
+      - 2014年6月19日に立った実況形式のスレのログ(名無し表記「名も無き被検体774号+」の板)。
+      - 収録時、当初サイドバーの他記事抜粋を本文と取り違えて「悪魔の最大の目的」と同一と誤判定し、オーナーの指摘で訂正した。両者は無関係の別作品。
+    origin:
+      board: 2ちゃんねる
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2476.html
+        - https://horror2ch.com/archives/post-2476.html/2
+        - https://horror2ch.com/archives/post-2476.html/3
+        - https://horror2ch.com/archives/post-2476.html/4
+        - https://horror2ch.com/archives/post-2476.html/5
+        - https://horror2ch.com/archives/post-2476.html/6
+      drop_lines: [スポンサーリンク]
+
   # ---- 未収集(取得元を探している話) ----
 
   - slug: resort-bait
