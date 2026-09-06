@@ -85,6 +85,21 @@ https://dangi.link/wp-json/wp/v2/posts/20162?_fields=id,link,title,date,content,
 5. どうしても原文が見つからない話は `status: wanted` で登録する(INDEX の未収集欄に載る)。
    既存の wanted: リゾートバイト、異世界エレベーター
 
+### 仮収録と昇格(オーナー指定の運用)
+
+大量の候補は**まず仮収録**する: catalog エントリに `shelf: provisional` を付けると、
+本文は通常どおり収録されるが、トップの目録には載らず **仮収録庫**
+(`docs/provisional.html`、冒頭抜粋付き一覧)に入る。作品ページには「仮収録」チップが付く。
+オーナーがそこで読み、良作だけを指示で**昇格**させる。
+
+- **昇格** = `shelf: provisional` を外し、slug を正式なローマ字名に改名
+  (旧 stories/raw を削除して再collect)、タグ・note・trivia を通常の品質基準で整備する
+- **落選** = catalog エントリと stories/raw のファイルを削除する
+- 仮収録時のメタデータは最小限でよい(title と source だけ。note/trivia は昇格時に書く)
+- 仮収録の slug は機械的(`p-<記事ID>` / `p-d<dangi記事ID>`)でよい
+- **一括収録はバッチ分割する(オーナー指示)**: 一度に25本程度ずつ collect し、
+  バッチごとにコミットする。collect.py は取得済みをスキップするので中断後の再開は安全
+
 ### 収録の品質基準
 
 - 本文は**改変しない**。レスヘッダ(番号・日付・ID)も来歴として残す

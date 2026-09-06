@@ -98,7 +98,7 @@ stories:
 
   - slug: saruyume-plus
     title: 猿夢+
-    aliases: [猿夢(後日談つき)]
+    aliases: [猿夢(後日談つき), 猿夢 続]
     tags: [夢]
     note: 猿夢の後日談を含む版。
     origin:
@@ -119,6 +119,7 @@ stories:
 
   - slug: yamanoke
     title: ヤマノケ
+    aliases: [テンソウメツ]
     tags: [名作, 山, 憑依]
     note: 山の怪。「テン・ソウ・メツ」。
     origin:
@@ -139,7 +140,7 @@ stories:
 
   - slug: pandora
     title: 禁后
-    aliases: [パンドラ]
+    aliases: [パンドラ, 禁后 ～パンドラ ～]
     tags: [名作, 呪物, 因習, 長編]
     note: 「禁后」と書いてパンドラと読む。家系と呪いの長編。
     origin:
@@ -160,6 +161,7 @@ stories:
 
   - slug: ura-s-ku
     title: 裏S区
+    aliases: [裏Ｓ区]
     tags: [長編, ヒトコワ, 因習]
     origin:
       board: 2ちゃんねる オカルト板
@@ -236,7 +238,7 @@ stories:
 
   - slug: mou-speed
     title: 猛スピード
-    aliases: [やってくる]
+    aliases: [やってくる, 双眼鏡]
     tags: [短編, 街, 怪異]
     note: 夜中に屋上から双眼鏡で街を眺める趣味が招いた遭遇。
     origin:
@@ -286,6 +288,7 @@ stories:
 
   - slug: ryomen-sukuna
     title: リョウメンスクナ
+    aliases: [リョウメンスクメ]
     tags: [名作, 呪物]
     note: 寺の解体現場で見つかった長い木箱。呪物系の代表作のひとつ。
     origin:
@@ -540,6 +543,7 @@ stories:
 
   - slug: sankan-no-haioku
     title: 山間の廃屋の部屋
+    aliases: [廃屋とカセットテープ]
     tags: [家, 田舎, ヒトコワ]
     note: 傷害事件の報道で容疑者の名前を必ず確かめる友人タカオの、その理由。
     trivia:
@@ -599,3 +603,1101 @@ stories:
     tags: [儀式, 異界]
     note: 儀式系ネットロア。まとまった原文の所在を探し中。
     status: wanted
+
+  # ---- 仮収録(horror2ch「洒落怖厳選」より一括取得。昇格/落選待ち) ----
+  - slug: p-2925
+    title: "鬼伝説の山"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2925.html
+        - https://horror2ch.com/archives/post-2925.html/2
+        - https://horror2ch.com/archives/post-2925.html/3
+        - https://horror2ch.com/archives/post-2925.html/4
+        - https://horror2ch.com/archives/post-2925.html/5
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2492
+    title: "中つ森の山神"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2492.html
+        - https://horror2ch.com/archives/post-2492.html/2
+        - https://horror2ch.com/archives/post-2492.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2488
+    title: "白ん坊"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2488.html
+        - https://horror2ch.com/archives/post-2488.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2454
+    title: "交換だから"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2454.html
+        - https://horror2ch.com/archives/post-2454.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d14845
+    title: "お札の家"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 14845
+
+  - slug: p-2428
+    title: "地下のまる穴"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2428.html
+        - https://horror2ch.com/archives/post-2428.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2260
+    title: "降りる場所を間違えたら・・・"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2260.html
+        - https://horror2ch.com/archives/post-2260.html/2
+        - https://horror2ch.com/archives/post-2260.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d29932
+    title: "ドライブイン"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 29932
+
+  - slug: p-2240
+    title: "地厄（じんやく）"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2240.html
+        - https://horror2ch.com/archives/post-2240.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d21082
+    title: "笑い女"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 21082
+
+  - slug: p-2226
+    title: "オキテル"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2226.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2224
+    title: "背無し"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2224.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2221
+    title: "普段とは違う家族"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-2221.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1974
+    title: "同窓会に行ったらクラスの半分が死んでて知らない女がいた"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1974.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1947
+    title: "かえるのうた"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1947.html
+        - https://horror2ch.com/archives/post-1947.html/2
+        - https://horror2ch.com/archives/post-1947.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1910
+    title: "診療所の宿直バイト"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1910.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1903
+    title: "団地での新聞配達"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1903.html
+        - https://horror2ch.com/archives/post-1903.html/2
+        - https://horror2ch.com/archives/post-1903.html/3
+        - https://horror2ch.com/archives/post-1903.html/4
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1879
+    title: "マネキンの生首と暮らしていた話"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1879.html
+        - https://horror2ch.com/archives/post-1879.html/2
+        - https://horror2ch.com/archives/post-1879.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1875
+    title: "お守りババア"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1875.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1865
+    title: "ネットの深奥"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1865.html
+        - https://horror2ch.com/archives/post-1865.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1856
+    title: "不思議な場所から帰れなかったかもしれない"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1856.html
+        - https://horror2ch.com/archives/post-1856.html/2
+        - https://horror2ch.com/archives/post-1856.html/3
+        - https://horror2ch.com/archives/post-1856.html/4
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1828
+    title: "隣人のクレーム"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1828.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1821
+    title: "辰眼童様"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1821.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d19354
+    title: "祖母の日記"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 19354
+
+  - slug: p-1813
+    title: "コトリバコ？"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1813.html
+      text_end_re: '\n関連記事'
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1811
+    title: "心霊動画撮影"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1811.html
+        - https://horror2ch.com/archives/post-1811.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1807
+    title: "イビキは関係ない"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1807.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1805
+    title: "橋の花束"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1805.html
+        - https://horror2ch.com/archives/post-1805.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1802
+    title: "開かずの部屋"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1802.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d17817
+    title: "変わってしまった母"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 17817
+
+  - slug: p-1791
+    title: "片付けのバイト"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1791.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1796
+    title: "姪と人形"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1796.html
+        - https://horror2ch.com/archives/post-1796.html/2
+        - https://horror2ch.com/archives/post-1796.html/3
+        - https://horror2ch.com/archives/post-1796.html/4
+        - https://horror2ch.com/archives/post-1796.html/5
+        - https://horror2ch.com/archives/post-1796.html/6
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1788
+    title: "藪から聞こえた声"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1788.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1786
+    title: "メモリーカードの中身"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1786.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1778
+    title: "カレハハナサナイ"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1778.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d23677
+    title: "ヤマ目"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 23677
+
+  - slug: p-1773
+    title: "ミルク飲み人形"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1773.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1769
+    title: "眠り稲"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1769.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1761
+    title: "黒いやつが来た"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1761.html
+        - https://horror2ch.com/archives/post-1761.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1753
+    title: "用水路"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1753.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1748
+    title: "カン、カン"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1748.html
+        - https://horror2ch.com/archives/post-1748.html/2
+        - https://horror2ch.com/archives/post-1748.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1733
+    title: "彼女がいない理由"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1733.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1729
+    title: "空き部屋"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1729.html
+        - https://horror2ch.com/archives/post-1729.html/2
+        - https://horror2ch.com/archives/post-1729.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1726
+    title: "夢遊病の弟"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1726.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1719
+    title: "うるさい"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1719.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1717
+    title: "知らない同級生"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1717.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1695
+    title: "血の泥団子"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1695.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1693
+    title: "自首の理由"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1693.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1690
+    title: "髪の毛"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1690.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1687
+    title: "主人を返して"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1687.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1674
+    title: "今、神様やってる"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1674.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1662
+    title: "ハンバーガー"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1662.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1658
+    title: "ロッカー"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1658.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d12990
+    title: "首取りの祠"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 12990
+
+  - slug: p-1551
+    title: "ドルフィンリング"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1551.html
+        - https://horror2ch.com/archives/post-1551.html/2
+        - https://horror2ch.com/archives/post-1551.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1538
+    title: "お下がり"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1538.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1434
+    title: "あったあった"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1434.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1428
+    title: "帰省"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1428.html
+        - https://horror2ch.com/archives/post-1428.html/2
+        - https://horror2ch.com/archives/post-1428.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1426
+    title: "RPGゲームをやらない理由"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1426.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1421
+    title: "立っている女"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1421.html
+        - https://horror2ch.com/archives/post-1421.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1339
+    title: "つきまとう女"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1339.html
+        - https://horror2ch.com/archives/post-1339.html/2
+        - https://horror2ch.com/archives/post-1339.html/3
+        - https://horror2ch.com/archives/post-1339.html/4
+        - https://horror2ch.com/archives/post-1339.html/5
+        - https://horror2ch.com/archives/post-1339.html/6
+        - https://horror2ch.com/archives/post-1339.html/7
+        - https://horror2ch.com/archives/post-1339.html/8
+        - https://horror2ch.com/archives/post-1339.html/9
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-1324
+    title: "つんぼゆすり"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1324.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80185468
+    title: "金庫"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80185468.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80185337
+    title: "異常なアパート"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80185337.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d677
+    title: "後悔"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 677
+
+  - slug: p-80175828
+    title: "ナースコール"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80175828.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d1311
+    title: "監視小屋"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 1311
+
+  - slug: p-80149190
+    title: "工事現場"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80149190.html
+        - https://horror2ch.com/archives/80149190.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80143282
+    title: "着信あり"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80143282.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d13294
+    title: "いざない"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 13294
+
+  - slug: p-80140495
+    title: "神谷のおばさん"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80140495.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d24519
+    title: "狂った家族"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 24519
+
+  - slug: p-80121479
+    title: "山の上にある廃墟"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80121479.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d769
+    title: "歯型"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 769
+
+  - slug: p-80121009
+    title: "離島の駐在所"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80121009.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80121002
+    title: "行きつけだったゲーセン"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80121002.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80120988
+    title: "座敷女"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80120988.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80120959
+    title: "2ショットチャット"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80120959.html
+        - https://horror2ch.com/archives/80120959.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80120900
+    title: "404号室"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80120900.html
+        - https://horror2ch.com/archives/80120900.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80120850
+    title: "もう1つのトイレ"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80120850.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80120256
+    title: "山奥のくねくね"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80120256.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80120237
+    title: "非常階段"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80120237.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033546
+    title: "卒業旅行計画"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033546.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033802
+    title: "迫りくるモノ"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033802.html
+        - https://horror2ch.com/archives/80033802.html/2
+        - https://horror2ch.com/archives/80033802.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033749
+    title: "廃屋恐怖症"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033749.html
+        - https://horror2ch.com/archives/80033749.html/2
+        - https://horror2ch.com/archives/80033749.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033701
+    title: "井戸の壁"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033701.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d1618
+    title: "マネキン"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 1618
+
+  - slug: p-80033494
+    title: "ざわつき声"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033494.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033685
+    title: "うたて沼"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033685.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033585
+    title: "サヨちゃん"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033585.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033469
+    title: "かんのけ坂"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033469.html
+        - https://horror2ch.com/archives/80033469.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80033430
+    title: "仏壇から覗く顔"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80033430.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80022628
+    title: "2人の少女"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80022628.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80022622
+    title: "廃墟探検"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80022622.html
+        - https://horror2ch.com/archives/80022622.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80022576
+    title: "１０の１４乗分の１"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80022576.html
+        - https://horror2ch.com/archives/80022576.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80022546
+    title: "拾った石"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80022546.html
+        - https://horror2ch.com/archives/80022546.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80020915
+    title: "祖父の死因"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80020915.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80020901
+    title: "鏡の中のナナちゃん"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80020901.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80016069
+    title: "廃病院の地下"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80016069.html
+        - https://horror2ch.com/archives/80016069.html/2
+        - https://horror2ch.com/archives/80016069.html/3
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80016028
+    title: "旅館の求人"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80016028.html
+        - https://horror2ch.com/archives/80016028.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80015998
+    title: "こっくりさんとテープ"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80015998.html
+        - https://horror2ch.com/archives/80015998.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-80015983
+    title: "母の話"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/80015983.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2280725
+    title: "おまえだれ？"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2280725.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2281714
+    title: "生前のビデオ"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2281714.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d13296
+    title: "リンフォン"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 13296
+
+  - slug: p-d313
+    title: "かしまさん"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 313
+
+  - slug: p-2280984
+    title: "ひょーひょー"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2280984.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2280915
+    title: "謎の隣人"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2280915.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2280595
+    title: "泉の広場・赤いドレスの女"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2280595.html
+        - https://horror2ch.com/archives/2280595.html/2
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2271721
+    title: "窓から見える煙突"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2271721.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2271707
+    title: "メンヘラ女"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2271707.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2271683
+    title: "竹林で　後日談"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2271683.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2271637
+    title: "竹林で"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2271637.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2271622
+    title: "渦人形"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2271622.html
+        - https://horror2ch.com/archives/2271622.html/2
+        - https://horror2ch.com/archives/2271622.html/3
+        - https://horror2ch.com/archives/2271622.html/4
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-d17759
+    title: "みっつの選択"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 17759
+
+  - slug: p-d15685
+    title: "ハカソヤ"
+    shelf: provisional
+    source:
+      <<: *dangi
+      post_id: 15685
+
+  - slug: p-2271444
+    title: "笑い袋"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2271444.html
+      drop_lines: [スポンサーリンク]
+
+  - slug: p-2271421
+    title: "クシャクシャ"
+    shelf: provisional
+    source:
+      type: url
+      urls:
+        - https://horror2ch.com/archives/2271421.html
+      drop_lines: [スポンサーリンク]
+
