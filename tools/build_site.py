@@ -218,7 +218,7 @@ def body_html(body: str) -> str:
 
 
 _RES_LINE = re.compile(
-    r"^\s*\d{1,4}\b.{0,60}(?:(?:19|20)\d\d/\d{1,2}/\d{1,2}|\d\d/\d\d/\d\d\b|ID:)"
+    r"^\s*\d{1,4}.{0,60}(?:(?:19|20)\d\d/\d{1,2}/\d{1,2}|\d\d/\d\d/\d\d\b|ID:)"
 )
 
 
