@@ -843,6 +843,7 @@ stories:
       type: url
       urls:
         - https://horror2ch.com/archives/post-1813.html
+      text_end_re: '\n関連記事'
       drop_lines: [スポンサーリンク]
 
   - slug: p-1811
@@ -1171,12 +1172,22 @@ stories:
         - https://horror2ch.com/archives/post-1421.html/2
       drop_lines: [スポンサーリンク]
 
-  - slug: p-d22042
+  - slug: p-1339
     title: "つきまとう女"
     shelf: provisional
     source:
-      <<: *dangi
-      post_id: 22042
+      type: url
+      urls:
+        - https://horror2ch.com/archives/post-1339.html
+        - https://horror2ch.com/archives/post-1339.html/2
+        - https://horror2ch.com/archives/post-1339.html/3
+        - https://horror2ch.com/archives/post-1339.html/4
+        - https://horror2ch.com/archives/post-1339.html/5
+        - https://horror2ch.com/archives/post-1339.html/6
+        - https://horror2ch.com/archives/post-1339.html/7
+        - https://horror2ch.com/archives/post-1339.html/8
+        - https://horror2ch.com/archives/post-1339.html/9
+      drop_lines: [スポンサーリンク]
 
   - slug: p-1324
     title: "つんぼゆすり"
