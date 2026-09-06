@@ -96,6 +96,20 @@ article h1 {
   font-size: 1.45rem; font-weight: 600; letter-spacing: .1em;
   margin: 0 0 .3rem;
 }
+.chip {
+  display: inline-block; vertical-align: middle;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: .65rem; color: var(--accent); border: 1px solid var(--accent);
+  border-radius: .25rem; padding: 0 .4em; margin-left: .5em; letter-spacing: .1em;
+}
+.excerpt {
+  color: var(--muted); font-size: .8rem; line-height: 1.7; margin-top: .1rem;
+}
+.subnav {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  margin: 2rem 0 0; font-size: .85rem;
+}
+.subnav a { color: var(--accent); text-decoration: none; }
 article .meta { margin-bottom: 2.2rem; }
 article .meta a { color: var(--muted); }
 .body p { margin: 1.4em 0; }
@@ -203,7 +217,27 @@ def body_html(body: str) -> str:
     return "\n".join(out)
 
 
-def build_story_page(fm: dict, body: str, prev_fm, next_fm, trivia: list[str]) -> str:
+_RES_LINE = re.compile(
+    r"^\s*\d{1,4}\s*[:： ].{0,60}(?:(?:19|20)\d\d/\d{1,2}/\d{1,2}|\d\d/\d\d/\d\d\b|ID:)"
+)
+
+
+def body_excerpt(body: str, length: int = 64) -> str:
+    """レスヘッダを飛ばした本文冒頭の抜粋(仮収録庫の一覧用)。"""
+    picked = []
+    for line in body.split("\n"):
+        line = line.strip()
+        if not line or _RES_LINE.match(line):
+            continue
+        picked.append(line)
+        if sum(len(x) for x in picked) >= length:
+            break
+    s = " ".join(picked)
+    return s[:length] + ("…" if len(s) > length else "")
+
+
+def build_story_page(fm: dict, body: str, prev_fm, next_fm, trivia: list[str],
+                     provisional: bool = False) -> str:
     src = fm.get("source", {})
     meta = story_meta_html(fm)
     if src.get("url"):
@@ -216,20 +250,22 @@ def build_story_page(fm: dict, body: str, prev_fm, next_fm, trivia: list[str]) -
         items = "".join(f"<li>{esc(t)}</li>" for t in trivia)
         trivia_html = f'\n<section class="trivia"><h2>覚え書き</h2><ul>{items}</ul></section>'
 
+    home_href, home_label = ("../provisional.html", "仮収録庫") if provisional else ("../index.html", "目録")
     pager = ['<nav class="pager">']
     pager.append(
         f'<a href="{prev_fm["slug"]}.html">← {esc(prev_fm["title"])}</a>' if prev_fm else "<span></span>"
     )
-    pager.append('<a class="home" href="../index.html">目録</a>')
+    pager.append(f'<a class="home" href="{home_href}">{home_label}</a>')
     pager.append(
         f'<a href="{next_fm["slug"]}.html">{esc(next_fm["title"])} →</a>' if next_fm else "<span></span>"
     )
     pager.append("</nav>")
 
+    chip = '<span class="chip">仮収録</span>' if provisional else ""
     content = f"""\
 <header class="site"><p><a href="../index.html" style="text-decoration:none">{SITE_TITLE} ─ {SITE_SUBTITLE}</a></p></header>
 <article>
-<h1>{esc(fm["title"])}</h1>
+<h1>{esc(fm["title"])}{chip}</h1>
 <div class="meta">{meta}</div>
 {note}
 <div class="body">
@@ -240,7 +276,7 @@ def build_story_page(fm: dict, body: str, prev_fm, next_fm, trivia: list[str]) -
     return PAGE.format(title=f"{fm['title']} | {SITE_TITLE}", root="../", repo=REPO_URL, body=content)
 
 
-def build_index_page(stories: list[dict], wanted: list[dict]) -> str:
+def build_index_page(stories: list[dict], wanted: list[dict], n_provisional: int = 0) -> str:
     items = []
     for fm in stories:
         items.append(
@@ -262,7 +298,32 @@ def build_index_page(stories: list[dict], wanted: list[dict]) -> str:
             for e in wanted
         )
         body += f'\n<h2 class="section">未収集</h2>\n<ul class="wanted">{rows}</ul>'
+    if n_provisional:
+        body += (f'\n<div class="subnav"><a href="provisional.html">仮収録庫 ── '
+                 f'{n_provisional}話(昇格待ち) →</a></div>')
     return PAGE.format(title=f"{SITE_TITLE} — {SITE_SUBTITLE}", root="", repo=REPO_URL, body=body)
+
+
+def build_provisional_page(items: list[tuple[dict, str]]) -> str:
+    """仮収録庫: (frontmatter, 本文抜粋) の一覧。"""
+    rows = []
+    for fm, excerpt in items:
+        rows.append(
+            f'<li><a href="s/{fm["slug"]}.html">'
+            f'<span class="story-title">{esc(fm["title"])}</span>'
+            f'<div class="excerpt">{esc(excerpt)}</div>'
+            f'<div class="meta">{story_meta_html(fm)}</div></a></li>'
+        )
+    body = f"""\
+<header class="site">
+<h1><a href="index.html">{SITE_TITLE}</a></h1>
+<p>仮収録庫 ── {len(items)}話(読んで気に入ったものだけ本棚へ昇格する)</p>
+</header>
+<ul class="catalog">
+{chr(10).join(rows)}
+</ul>
+<div class="subnav"><a href="index.html">← 目録へ戻る</a></div>"""
+    return PAGE.format(title=f"仮収録庫 | {SITE_TITLE}", root="", repo=REPO_URL, body=body)
 
 
 def main():
@@ -275,8 +336,13 @@ def main():
         fm, body = read_frontmatter(path)
         loaded[fm["slug"]] = (fm, body)
 
-    # catalog の並び順(=手で決めた順)を保ち、catalog外の話は末尾へ
-    slugs = [s for s in order if s in loaded] + [s for s in loaded if s not in order]
+    by_slug = {e["slug"]: e for e in catalog["stories"]}
+    provisional = {s for s, e in by_slug.items() if e.get("shelf") == "provisional"}
+
+    # catalog の並び順(=手で決めた順)を保ち、catalog外の話は末尾へ。本棚と仮収録庫で分ける
+    ordered = [s for s in order if s in loaded] + [s for s in loaded if s not in order]
+    main_slugs = [s for s in ordered if s not in provisional]
+    prov_slugs = [s for s in ordered if s in provisional]
 
     if DOCS.exists():
         shutil.rmtree(DOCS)
@@ -284,19 +350,26 @@ def main():
     (DOCS / ".nojekyll").write_text("")
     (DOCS / "style.css").write_text(STYLE, encoding="utf-8")
 
-    by_slug = {e["slug"]: e for e in catalog["stories"]}
-    fms = [loaded[s][0] for s in slugs]
-    for i, slug in enumerate(slugs):
-        fm, body = loaded[slug]
-        prev_fm = fms[i - 1] if i > 0 else None
-        next_fm = fms[i + 1] if i + 1 < len(fms) else None
-        trivia = by_slug.get(slug, {}).get("trivia") or []
-        (DOCS / "s" / f"{slug}.html").write_text(
-            build_story_page(fm, body, prev_fm, next_fm, trivia), encoding="utf-8"
-        )
+    for slugs, is_prov in ((main_slugs, False), (prov_slugs, True)):
+        fms = [loaded[s][0] for s in slugs]
+        for i, slug in enumerate(slugs):
+            fm, body = loaded[slug]
+            prev_fm = fms[i - 1] if i > 0 else None
+            next_fm = fms[i + 1] if i + 1 < len(fms) else None
+            trivia = by_slug.get(slug, {}).get("trivia") or []
+            (DOCS / "s" / f"{slug}.html").write_text(
+                build_story_page(fm, body, prev_fm, next_fm, trivia, provisional=is_prov),
+                encoding="utf-8",
+            )
 
-    (DOCS / "index.html").write_text(build_index_page(fms, wanted), encoding="utf-8")
-    print(f"docs/ を生成({len(slugs)}話+目録)")
+    main_fms = [loaded[s][0] for s in main_slugs]
+    (DOCS / "index.html").write_text(
+        build_index_page(main_fms, wanted, n_provisional=len(prov_slugs)), encoding="utf-8"
+    )
+    if prov_slugs:
+        items = [(loaded[s][0], body_excerpt(loaded[s][1])) for s in prov_slugs]
+        (DOCS / "provisional.html").write_text(build_provisional_page(items), encoding="utf-8")
+    print(f"docs/ を生成(本棚{len(main_slugs)}話+仮収録{len(prov_slugs)}話+目録)")
 
 
 if __name__ == "__main__":

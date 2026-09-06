@@ -25,12 +25,14 @@ def main():
         if fm:
             collected[fm["slug"]] = (fm, path)
 
+    provisional = {e["slug"] for e in catalog["stories"] if e.get("shelf") == "provisional"}
+    n_main = sum(1 for s in collected if s not in provisional)
     lines = [
         "# 蔵書目録",
         "",
         "`tools/build_index.py` が生成する。手で編集しない。",
         "",
-        f"収集済み **{len(collected)}** 話",
+        f"収集済み **{n_main}** 話(ほかに仮収録 {sum(1 for s in collected if s in provisional)} 話)",
         "",
         "| タイトル | 投稿日 | タグ | 文字数 | 取得元 |",
         "|---|---|---|---|---|",
@@ -41,6 +43,8 @@ def main():
     wanted = []
     for entry in catalog["stories"]:
         slug = entry["slug"]
+        if slug in provisional:
+            continue
         if slug not in collected:
             if entry.get("status") == "wanted":
                 wanted.append(entry)
